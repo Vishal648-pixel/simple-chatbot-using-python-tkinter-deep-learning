@@ -1,0 +1,377 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hi there",
+        "Hello",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Good day"
+      ],
+      "responses": [
+        "Hello, thanks for asking!",
+        "Good to see you again!",
+        "Hi there, how can I help you?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Nice chatting to you",
+        "Till next time"
+      ],
+      "responses": [
+        "See you!",
+        "Have a nice day!",
+        "Bye! Come back again soon."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Awesome thanks",
+        "Thanks for helping me"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure!"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [
+        "random",
+        "unknown question",
+        "nonsense input",
+        "blah blah"
+      ],
+      "responses": [
+        "Sorry, I can't understand you.",
+        "Please give me more information.",
+        "I'm not sure I understand."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "options",
+      "patterns": [
+        "How you could help me?",
+        "What can you do?",
+        "What help you provide?",
+        "How you can be helpful?",
+        "What support is offered?"
+      ],
+      "responses": [
+        "I can help with adverse drug reactions, blood pressure tracking, hospitals and pharmacies.",
+        "I provide support for blood pressure, hospitals, pharmacies and adverse drug reactions."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "adverse_drug",
+      "patterns": [
+        "How to check adverse drug reaction?",
+        "Open adverse drugs module",
+        "List drugs with adverse reactions",
+        "Which drugs cause adverse reactions?",
+        "Drugs without adverse reaction"
+      ],
+      "responses": [
+        "Navigating to Adverse Drug Reaction module."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "blood_pressure",
+      "patterns": [
+        "Open blood pressure module",
+        "Blood pressure data entry",
+        "Log blood pressure",
+        "Record blood pressure results",
+        "Manage blood pressure data"
+      ],
+      "responses": [
+        "Navigating to Blood Pressure module."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "blood_pressure_search",
+      "patterns": [
+        "Search blood pressure history",
+        "Find blood pressure records",
+        "Show patient blood pressure",
+        "Blood pressure history by patient"
+      ],
+      "responses": [
+        "Please provide Patient ID."
+      ],
+      "context": [
+        "search_blood_pressure_by_patient_id"
+      ]
+    },
+    {
+      "tag": "search_blood_pressure_by_patient_id",
+      "patterns": [
+        "patient id",
+        "blood pressure id",
+        "patient number"
+      ],
+      "responses": [
+        "Loading blood pressure results for the patient."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "pharmacy_search",
+      "patterns": [
+        "Find pharmacy",
+        "Locate pharmacy",
+        "Search pharmacy",
+        "Pharmacy near me"
+      ],
+      "responses": [
+        "Please provide pharmacy name."
+      ],
+      "context": [
+        "search_pharmacy_by_name"
+      ]
+    },
+    {
+      "tag": "search_pharmacy_by_name",
+      "patterns": [
+        "pharmacy name",
+        "medical store name",
+        "chemist name"
+      ],
+      "responses": [
+        "Loading pharmacy details."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "hospital_search",
+      "patterns": [
+        "Find hospital",
+        "Search hospital",
+        "Hospital lookup",
+        "Looking for hospital"
+      ],
+      "responses": [
+        "Please provide hospital name or location."
+      ],
+      "context": [
+        "search_hospital_by_params"
+      ]
+    },
+    {
+      "tag": "search_hospital_by_params",
+      "patterns": [
+        "hospital details",
+        "hospital search",
+        "hospital information"
+      ],
+      "responses": [
+        "Please provide hospital type."
+      ],
+      "context": [
+        "search_hospital_by_type"
+      ]
+    },
+    {
+      "tag": "search_hospital_by_type",
+      "patterns": [
+        "government hospital",
+        "private hospital",
+        "general hospital",
+        "specialty hospital"
+      ],
+      "responses": [
+        "Loading hospital details."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "symptom_check",
+      "patterns": [
+        "I feel sick",
+        "Describe my symptom",
+        "I have a headache",
+        "Can you check my symptom?"
+      ],
+      "responses": [
+        "Can you describe your main symptom?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "duration_check",
+      "patterns": [
+        "How long have I been sick?",
+        "Duration of illness",
+        "Symptom duration",
+        "Since when I feel unwell"
+      ],
+      "responses": [
+        "How long have you been experiencing this?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "severity_check",
+      "patterns": [
+        "Rate my pain",
+        "Severity of discomfort",
+        "Pain level",
+        "How severe is it?"
+      ],
+      "responses": [
+        "On a scale of 1–10, how severe is your discomfort?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "medical_history",
+      "patterns": [
+        "I have diabetes",
+        "I have hypertension",
+        "Existing conditions",
+        "Medical history"
+      ],
+      "responses": [
+        "Do you have any existing conditions like diabetes or hypertension?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "lifestyle",
+      "patterns": [
+        "I smoke",
+        "I drink alcohol",
+        "I exercise",
+        "Lifestyle habits"
+      ],
+      "responses": [
+        "Do you smoke, drink alcohol, or exercise regularly?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "medication_reminder",
+      "patterns": [
+        "Remind me to take medicine",
+        "Medication reminder",
+        "Medicine alert",
+        "Pill reminder"
+      ],
+      "responses": [
+        "Would you like me to remind you to take your prescribed medicines?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "appointment_guidance",
+      "patterns": [
+        "Book doctor appointment",
+        "Schedule consultation",
+        "Doctor visit",
+        "Need appointment"
+      ],
+      "responses": [
+        "Do you want me to help schedule a doctor’s appointment?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "emergency_check",
+      "patterns": [
+        "Chest pain",
+        "Difficulty breathing",
+        "Severe bleeding",
+        "Emergency situation"
+      ],
+      "responses": [
+        "Are you experiencing chest pain, difficulty breathing, or severe bleeding? If yes, please seek emergency care immediately."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "general_health_tips",
+      "patterns": [
+        "Health tips",
+        "Stay healthy",
+        "General advice",
+        "How to feel better"
+      ],
+      "responses": [
+        "It’s important to stay hydrated and rest when feeling unwell."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "next_steps",
+      "patterns": [
+        "What should I do?",
+        "Next steps",
+        "Symptom lasting long",
+        "Still not better"
+      ],
+      "responses": [
+        "Since your symptoms have lasted more than a week, it’s best to consult a doctor."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "medication_info",
+      "patterns": [
+        "Tell me about medicines",
+        "Medicine info",
+        "Drug details",
+        "Medication guidance"
+      ],
+      "responses": [
+        "I can share general information about common medicines, but please confirm with your doctor before use."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "preventive_care",
+      "patterns": [
+        "Prevent illness",
+        "Stay fit",
+        "Healthy lifestyle",
+        "Avoid chronic disease"
+      ],
+      "responses": [
+        "Regular exercise and a balanced diet can help reduce risks of chronic illness."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "emergency_advice",
+      "patterns": [
+        "Emergency advice",
+        "Critical health issue",
+        "Severe condition",
+        "Urgent help"
+      ],
+      "responses": [
+        "If you have severe chest pain, difficulty breathing, sudden weakness, or uncontrolled bleeding, please call emergency services or go to the nearest emergency department immediately."
+      ],
+      "context": [""]
+    }
+  ]
+}
