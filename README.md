@@ -115,9 +115,9 @@ python -c "import nltk; nltk.download('punkt')"
 
 ❌ model.h5 not found
 
-✔ Run:
 
-python train_chatbot.py
+
+note-it wil take 1-2 minutes to load gui becuase it takes time to load data
 
 
 <img width="650" height="812" alt="Screenshot 2025-12-14 202755" src="https://github.com/user-attachments/assets/48b004e6-28fc-4888-b988-b3936614cb42" />
